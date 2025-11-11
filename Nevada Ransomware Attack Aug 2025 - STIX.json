@@ -1,0 +1,556 @@
+{
+  "type": "bundle",
+  "id": "bundle--01488277-c66b-4f7e-8f58-181ce724cd50",
+  "spec_version": "2.1",
+  "created": "2025-11-11T13:29:09.884Z",
+  "modified": "2025-11-11T13:29:09.884Z",
+  "objects": [
+    {
+      "type": "extension-definition",
+      "id": "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4",
+      "spec_version": "2.1",
+      "created": "2022-08-02T19:34:35.143Z",
+      "modified": "2022-08-02T19:34:35.143Z",
+      "name": "Attack Flow",
+      "description": "Extends STIX 2.1 with features to create Attack Flows.",
+      "created_by_ref": "identity--fb9c968a-745b-4ade-9b25-c324172197f4",
+      "schema": "https://center-for-threat-informed-defense.github.io/attack-flow/stix/attack-flow-schema-2.0.0.json",
+      "version": "2.0.0",
+      "extension_types": [
+        "new-sdo"
+      ],
+      "external_references": [
+        {
+          "source_name": "Documentation",
+          "description": "Documentation for Attack Flow",
+          "url": "https://center-for-threat-informed-defense.github.io/attack-flow"
+        },
+        {
+          "source_name": "GitHub",
+          "description": "Source code repository for Attack Flow",
+          "url": "https://github.com/center-for-threat-informed-defense/attack-flow"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "id": "identity--fb9c968a-745b-4ade-9b25-c324172197f4",
+      "spec_version": "2.1",
+      "created": "2022-08-02T19:34:35.143Z",
+      "modified": "2022-08-02T19:34:35.143Z",
+      "created_by_ref": "identity--fb9c968a-745b-4ade-9b25-c324172197f4",
+      "name": "MITRE Center for Threat-Informed Defense",
+      "identity_class": "organization"
+    },
+    {
+      "type": "attack-flow",
+      "id": "attack-flow--16c649ae-fd90-4875-b050-ddfe7b061b17",
+      "spec_version": "2.1",
+      "created": "2025-11-11T12:26:04.498Z",
+      "modified": "2025-11-11T13:29:09.884Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "created_by_ref": "identity--12659262-1d56-49dc-b24a-83995e913f7c",
+      "start_refs": [
+        "attack-action--9b567fb5-0aac-4e82-8f41-b9dde2323254"
+      ],
+      "name": "Nevada Ransomware Attack Aug 2025",
+      "scope": "incident",
+      "external_references": [
+        {
+          "source_name": "Bleeping Computer",
+          "url": "https://www.bleepingcomputer.com/news/security/how-a-ransomware-gang-encrypted-nevada-governments-systems/"
+        },
+        {
+          "source_name": "State of Nevada AAR",
+          "url": "https://www.documentcloud.org/documents/26218568-gto-statewide-cyber-event-aar-final/"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "id": "identity--12659262-1d56-49dc-b24a-83995e913f7c",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.884Z",
+      "modified": "2025-11-11T13:29:09.884Z",
+      "name": "Jordan M. Schroeder",
+      "identity_class": "individual"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--9b567fb5-0aac-4e82-8f41-b9dde2323254",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.884Z",
+      "modified": "2025-11-11T13:29:09.884Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Initial Access",
+      "tactic_id": "TA0001",
+      "tactic_ref": "x-mitre-tactic--ffd5bcee-6e16-4dd2-8eca-7b3beedf33ca",
+      "execution_start": "2025-05-13T23:00:00.000Z",
+      "effect_refs": [
+        "attack-action--cdd56592-7a5d-404b-82dd-5ebe3a707374"
+      ]
+    },
+    {
+      "type": "note",
+      "id": "note--f7fcc0e8-9189-4d19-a44d-3a837c4bab84",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.884Z",
+      "modified": "2025-11-11T13:29:09.884Z",
+      "abstract": "Malicious Google Ad",
+      "content": "Led to a fraudulent website impersonating the legitimate tool",
+      "object_refs": [
+        "malware--3d6f1d01-8ecf-4cae-b8a5-e7d38209a2f8"
+      ]
+    },
+    {
+      "type": "malware",
+      "id": "malware--3d6f1d01-8ecf-4cae-b8a5-e7d38209a2f8",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.884Z",
+      "modified": "2025-11-11T13:29:09.884Z",
+      "name": "Trojanized Sys Admin Tool",
+      "malware_types": [
+        "Trojan"
+      ],
+      "is_family": false,
+      "kill_chain_phases": [
+        "Initial Access"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--cdd56592-7a5d-404b-82dd-5ebe3a707374",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.884Z",
+      "modified": "2025-11-11T13:29:09.884Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Backdoor",
+      "tactic_id": "TA0003",
+      "tactic_ref": "x-mitre-tactic--5bc1d813-693e-4823-9961-abf9af4b0e92",
+      "description": "A hidden backdoor that established a connection to the TA’s infrastructure each time a user logged onto the system",
+      "confidence": 100,
+      "effect_refs": [
+        "attack-action--cdd57273-6cb8-4770-9a64-d5a09989db6a"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--cdd57273-6cb8-4770-9a64-d5a09989db6a",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Installed Remote Monitoring Software",
+      "tactic_id": "TA0002",
+      "tactic_ref": "x-mitre-tactic--4ca45d45-df4d-4613-8980-bac22d278fa5",
+      "technique_id": "T1204",
+      "technique_ref": "attack-pattern--8c32eb4d-805f-4fc5-bf60-c4d476c131b5",
+      "confidence": 100,
+      "execution_start": "2025-08-04T23:00:00.000Z",
+      "effect_refs": [
+        "attack-action--81cbff6b-ec84-4c8f-b5a3-6206fc7313a8",
+        "attack-action--02d981dc-20ff-417b-88cc-5b0d749bf8e3"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--81cbff6b-ec84-4c8f-b5a3-6206fc7313a8",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Keylogger",
+      "tactic_id": "TA0009",
+      "tactic_ref": "x-mitre-tactic--d108ce10-2419-4cf9-a774-46161d6c6cfe",
+      "technique_id": "T1056.001",
+      "technique_ref": "attack-pattern--09a60ea3-a8d1-4ae5-976e-5783248b72a4",
+      "confidence": 100,
+      "execution_start": "2025-08-04T23:00:00.000Z",
+      "effect_refs": [
+        "attack-operator--59e3c6ff-cc08-409a-87de-2b202b22e455"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--02d981dc-20ff-417b-88cc-5b0d749bf8e3",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Screen Capture",
+      "tactic_id": "TA0009",
+      "tactic_ref": "x-mitre-tactic--d108ce10-2419-4cf9-a774-46161d6c6cfe",
+      "technique_id": "T1113",
+      "technique_ref": "attack-pattern--0259baeb-9f63-4c69-bf10-eb038c390688",
+      "confidence": 100,
+      "execution_start": "2025-08-04T23:00:00.000Z",
+      "effect_refs": [
+        "attack-operator--59e3c6ff-cc08-409a-87de-2b202b22e455"
+      ]
+    },
+    {
+      "type": "attack-operator",
+      "id": "attack-operator--59e3c6ff-cc08-409a-87de-2b202b22e455",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "operator": "OR",
+      "effect_refs": [
+        "attack-action--4a47c4e6-30bd-4bd4-8bc6-828f8f844f18"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--4a47c4e6-30bd-4bd4-8bc6-828f8f844f18",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Credential Access",
+      "tactic_id": "TA0006",
+      "tactic_ref": "x-mitre-tactic--2558fd61-8c75-4730-94c4-11926db2a263",
+      "description": "TA compromised both the standard and privileged accounts for the primary users of the two systems on which remote monitoring software was installed",
+      "execution_start": "2025-08-14T23:00:00.000Z",
+      "effect_refs": [
+        "attack-action--2d314eb0-9841-4c1a-8ec7-d47f2b779fa7",
+        "attack-action--783555cd-a262-42e9-a571-1935f4ea6e8c"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--783555cd-a262-42e9-a571-1935f4ea6e8c",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Privilege Escalation",
+      "tactic_id": "TA0004",
+      "tactic_ref": "x-mitre-tactic--5e29b093-294e-49e9-a803-dab3d73b77dd",
+      "execution_start": "2025-08-13T23:00:00.000Z"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--2d314eb0-9841-4c1a-8ec7-d47f2b779fa7",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Lateral Movement",
+      "tactic_id": "TA0008",
+      "tactic_ref": "x-mitre-tactic--7141578b-e50b-4dcc-bfa4-08a8dd689e9e",
+      "execution_start": "2025-08-13T23:00:00.000Z",
+      "effect_refs": [
+        "attack-action--2a9ff47d-c00e-441e-b604-daf413866b08"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--2a9ff47d-c00e-441e-b604-daf413866b08",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Protocol Tunneling",
+      "tactic_id": "TA0011",
+      "tactic_ref": "x-mitre-tactic--f72804c5-f15a-449e-a5da-2eecd181f813",
+      "technique_id": "T1572",
+      "technique_ref": "attack-pattern--4fe28b27-b13c-453e-a386-c2ef362a573b",
+      "description": "Encrypted to evade detection",
+      "effect_refs": [
+        "attack-action--60f463b0-61d6-42a0-821f-692bcacf714c"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--60f463b0-61d6-42a0-821f-692bcacf714c",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Remote Desktop Protocol",
+      "tactic_id": "TA0008",
+      "tactic_ref": "x-mitre-tactic--7141578b-e50b-4dcc-bfa4-08a8dd689e9e",
+      "technique_id": "T1021.001",
+      "technique_ref": "attack-pattern--eb062747-2193-45de-8fa2-e62549c37ddf",
+      "asset_refs": [
+        "attack-asset--c428bdc2-bb6b-4bea-ba7b-fe11c42bdbd8"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--a3bb27a0-4377-4c9d-a2f1-a0091faff6e8",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "File and Directory Discovery",
+      "tactic_id": "TA0007",
+      "tactic_ref": "x-mitre-tactic--c17c5845-175e-4421-9713-829d0573dbc9",
+      "technique_id": "T1083",
+      "technique_ref": "attack-pattern--7bc57495-ea59-4380-be31-a64af124ef18"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--5c97b5b4-93e9-4df4-aee9-07d1c82b24a2",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Credentials from Password Stores",
+      "tactic_id": "TA0006",
+      "tactic_ref": "x-mitre-tactic--2558fd61-8c75-4730-94c4-11926db2a263",
+      "technique_id": "T1555",
+      "technique_ref": "attack-pattern--3fc9b85a-2862-4363-a64d-d692e3ffbee0",
+      "description": "retrieve passwords from 26 accounts",
+      "effect_refs": [
+        "attack-action--dfb74456-a5b6-4d08-a294-663756830353"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--da40cd95-a59a-4a77-83eb-a56b2b677651",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Clear Windows Event Logs",
+      "tactic_id": "TA0005",
+      "tactic_ref": "x-mitre-tactic--78b23412-0651-46d7-a540-170a1ce8bd5a",
+      "technique_id": "T1070.001",
+      "technique_ref": "attack-pattern--6495ae23-3ab4-43c5-a94f-5638a2c31fd2"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--5a237d80-b0b2-4db1-aebe-889a145e75f3",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "File Deletion: Backups",
+      "tactic_id": "TA0005",
+      "tactic_ref": "x-mitre-tactic--78b23412-0651-46d7-a540-170a1ce8bd5a",
+      "technique_id": "T1070.004",
+      "technique_ref": "attack-pattern--d63a3fb8-9452-4e9d-a60a-54be68d5998c",
+      "description": "TA authenticated to the backup server and deleted the backup volumes",
+      "execution_start": "2025-08-23T23:00:00.000Z"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--dfb74456-a5b6-4d08-a294-663756830353",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Code Signing Policy Modification",
+      "tactic_id": "TA0005",
+      "tactic_ref": "x-mitre-tactic--78b23412-0651-46d7-a540-170a1ce8bd5a",
+      "technique_id": "T1553.006",
+      "technique_ref": "attack-pattern--565275d5-fcc3-4b66-b4e7-928e4cac6b8c",
+      "description": "Logged into the VM centralized management server using the root account and changed security settings to allow unauthorized code to run",
+      "effect_refs": [
+        "attack-action--9a11b1f5-e378-4739-8bd9-0d92c73ea671"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--9a11b1f5-e378-4739-8bd9-0d92c73ea671",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Ransomware deployed",
+      "tactic_id": "TA0040",
+      "tactic_ref": "x-mitre-tactic--5569339b-94c2-49ee-afb3-2222936582c8",
+      "technique_id": "T1486",
+      "technique_ref": "attack-pattern--b80d107d-fa0d-4b60-9684-b0433e8bdba0",
+      "description": "TA deployed the ransomware onto the virtualization servers hosting VMs, which encrypted VMs and resulted in critical services being taken offline."
+    },
+    {
+      "type": "attack-asset",
+      "id": "attack-asset--4f2b4285-ed91-465f-bf05-50a4c81bc18d",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Internal Admin computer",
+      "object_ref": "attack-action--9b567fb5-0aac-4e82-8f41-b9dde2323254"
+    },
+    {
+      "type": "infrastructure",
+      "id": "infrastructure--78da4454-7d1f-421e-b2a2-b2eabcb26b1a",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "name": "C2 server"
+    },
+    {
+      "type": "tool",
+      "id": "tool--fc3bc3e7-9ec9-4f26-99ed-27f22b6fe3b6",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "name": "Remote Monitoring Software"
+    },
+    {
+      "type": "attack-asset",
+      "id": "attack-asset--c428bdc2-bb6b-4bea-ba7b-fe11c42bdbd8",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Servers",
+      "object_ref": "attack-action--da40cd95-a59a-4a77-83eb-a56b2b677651"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--ebab4960-bb75-4f5a-a320-4e6abd372f13",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "relationship_type": "related-to",
+      "source_ref": "malware--3d6f1d01-8ecf-4cae-b8a5-e7d38209a2f8",
+      "target_ref": "attack-action--9b567fb5-0aac-4e82-8f41-b9dde2323254"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--09a844c9-776d-4808-9c4b-61cadbc99d87",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "relationship_type": "related-to",
+      "source_ref": "attack-action--cdd56592-7a5d-404b-82dd-5ebe3a707374",
+      "target_ref": "tool--fc3bc3e7-9ec9-4f26-99ed-27f22b6fe3b6"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--89a4941c-a948-43cf-aa48-b585d2a91c44",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "relationship_type": "related-to",
+      "source_ref": "infrastructure--78da4454-7d1f-421e-b2a2-b2eabcb26b1a",
+      "target_ref": "attack-action--cdd56592-7a5d-404b-82dd-5ebe3a707374"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--bf013487-c227-42ef-b034-49b7c5ef7340",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "relationship_type": "related-to",
+      "source_ref": "tool--fc3bc3e7-9ec9-4f26-99ed-27f22b6fe3b6",
+      "target_ref": "attack-action--cdd57273-6cb8-4770-9a64-d5a09989db6a"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--177865f9-2893-4251-862d-e8fac5de1584",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "relationship_type": "related-to",
+      "source_ref": "attack-asset--c428bdc2-bb6b-4bea-ba7b-fe11c42bdbd8",
+      "target_ref": "attack-action--5c97b5b4-93e9-4df4-aee9-07d1c82b24a2"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--587723da-51f8-43dd-a3c3-c56157040619",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "relationship_type": "related-to",
+      "source_ref": "attack-asset--c428bdc2-bb6b-4bea-ba7b-fe11c42bdbd8",
+      "target_ref": "attack-action--a3bb27a0-4377-4c9d-a2f1-a0091faff6e8"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--bfa890ad-889a-4760-85b9-7e61b819db68",
+      "spec_version": "2.1",
+      "created": "2025-11-11T13:29:09.885Z",
+      "modified": "2025-11-11T13:29:09.885Z",
+      "relationship_type": "related-to",
+      "source_ref": "attack-asset--c428bdc2-bb6b-4bea-ba7b-fe11c42bdbd8",
+      "target_ref": "attack-action--5a237d80-b0b2-4db1-aebe-889a145e75f3"
+    }
+  ]
+}
