@@ -1,0 +1,646 @@
+{
+    "schema": "attack_flow_v2",
+    "theme": "dark_theme",
+    "objects": [
+        {
+            "id": "flow",
+            "instance": "01f6e03d-f245-4c02-8059-b77f8d4611c0",
+            "properties": [
+                [
+                    "name",
+                    "Bowman Dam Attack 2013"
+                ],
+                [
+                    "description",
+                    "Iranian hackers reportedly breached the control system of a dam near New York City in 2013. The small structure about 20 miles from New York City is used for flood control."
+                ],
+                [
+                    "author",
+                    [
+                        [
+                            "name",
+                            "Jordan M. Schroeder"
+                        ],
+                        [
+                            "identity_class",
+                            "individual"
+                        ],
+                        [
+                            "contact_information",
+                            "jordan@arxacyber.com"
+                        ]
+                    ]
+                ],
+                [
+                    "scope",
+                    "incident"
+                ],
+                [
+                    "external_references",
+                    [
+                        [
+                            "6d9dc10597075c19084c098e7e75010d",
+                            [
+                                [
+                                    "source_name",
+                                    "The Guardian"
+                                ],
+                                [
+                                    "description",
+                                    "Iranian hackers infiltrated computers of small US dam, says report"
+                                ],
+                                [
+                                    "url",
+                                    "https://www.theguardian.com/us-news/2015/dec/22/iranian-hackers-infiltrated-computers-of-small-us-dam-says-report"
+                                ]
+                            ]
+                        ],
+                        [
+                            "a73682a080596578fd5625868844f699",
+                            [
+                                [
+                                    "source_name",
+                                    "US Justice Dept"
+                                ],
+                                [
+                                    "description",
+                                    "Seven Iranians Working for Islamic Revolutionary Guard Corps-Affiliated Entities Charged for Conducting Coordinated Campaign of Cyber Attacks Against U.S. Financial Sector"
+                                ],
+                                [
+                                    "url",
+                                    "https://www.justice.gov/archives/opa/pr/seven-iranians-working-islamic-revolutionary-guard-corps-affiliated-entities-charged"
+                                ]
+                            ]
+                        ]
+                    ]
+                ],
+                [
+                    "created",
+                    {
+                        "time": "2026-01-10T14:15:50.459+00:00",
+                        "zone": "Europe/London"
+                    }
+                ]
+            ],
+            "objects": [
+                "15ed53c5-87fe-4750-9596-43d674d2ef7a",
+                "c4cf3d60-fb49-4f8f-a594-663c4c9f40a8",
+                "602efaca-f0f1-4c95-9c35-15204109d8fc",
+                "24207e74-9e7e-4bc8-bee1-6b2216c0ef34",
+                "a1bc1aa9-c544-47b3-9461-347f88ff4d47",
+                "0db53fea-54ed-45a0-bcba-0768c3020c26",
+                "cab2907d-33eb-4067-ae3a-a943f1d90e85"
+            ]
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "15ed53c5-87fe-4750-9596-43d674d2ef7a",
+            "source": "fc33194f-872f-4e43-b603-3693b080a5d6",
+            "target": "b2786f70-c56f-4424-bf5e-b6cc7b4d1950",
+            "handles": [
+                "cd580e8d-2627-44da-9f08-1c58676d0936"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "fc33194f-872f-4e43-b603-3693b080a5d6"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "b2786f70-c56f-4424-bf5e-b6cc7b4d1950"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "cd580e8d-2627-44da-9f08-1c58676d0936"
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "c4cf3d60-fb49-4f8f-a594-663c4c9f40a8",
+            "source": "f43ec5ed-cea5-405c-9783-5ba3f776b1a7",
+            "target": "6af4732c-2e57-4f74-aa99-e59c3b2a7208",
+            "handles": [
+                "cb13c947-fadd-4e0c-b7e5-97eb69a3d849"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "f43ec5ed-cea5-405c-9783-5ba3f776b1a7"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "6af4732c-2e57-4f74-aa99-e59c3b2a7208"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "cb13c947-fadd-4e0c-b7e5-97eb69a3d849"
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "602efaca-f0f1-4c95-9c35-15204109d8fc",
+            "source": "fefee6fe-02cd-41b4-9923-96c2c27b5457",
+            "target": "c8454082-4f69-4c51-b49f-fc28f49c16d1",
+            "handles": [
+                "fa2140c5-5895-487e-bcd5-ba4a6ef5dd46"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "fefee6fe-02cd-41b4-9923-96c2c27b5457"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "c8454082-4f69-4c51-b49f-fc28f49c16d1"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "fa2140c5-5895-487e-bcd5-ba4a6ef5dd46"
+        },
+        {
+            "id": "action",
+            "instance": "24207e74-9e7e-4bc8-bee1-6b2216c0ef34",
+            "properties": [
+                [
+                    "name",
+                    "Cellular Access to SCADA system"
+                ],
+                [
+                    "ttp",
+                    [
+                        [
+                            "tactic",
+                            "TA0108"
+                        ],
+                        [
+                            "technique",
+                            "T0866"
+                        ]
+                    ]
+                ],
+                [
+                    "description",
+                    "Cellular modem provides direct remote access to SCADA controller"
+                ],
+                [
+                    "confidence",
+                    "certain"
+                ],
+                [
+                    "execution_start",
+                    null
+                ],
+                [
+                    "execution_end",
+                    null
+                ]
+            ],
+            "anchors": {
+                "0": "48000809-d440-4dcd-8bd3-1ff7bc4709dd",
+                "30": "62fc7a55-1608-4e1a-819c-a1ed5d2617bc",
+                "60": "ea1d38e2-1300-4a4a-8796-0b656cbff5da",
+                "90": "78d147b0-6e50-40ee-9365-ae07d5ca22d0",
+                "120": "799cd479-45ec-4b97-9b41-1670bdc35ff2",
+                "150": "1afc33a2-7610-4943-9292-b98612533598",
+                "180": "1e49848b-c673-4ccb-a2da-a02c11794719",
+                "210": "98754ae4-6ea3-4fa5-8944-52741c70b711",
+                "240": "f20b9244-fbf7-43ca-bcef-c5005b4f3509",
+                "270": "0cbb3262-a88c-4fae-8251-18d49c99c076",
+                "300": "4832b1d2-6d1f-4c02-828d-482745d221aa",
+                "330": "e6529bde-e79f-4181-883b-3e2bafed102b"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "48000809-d440-4dcd-8bd3-1ff7bc4709dd",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "62fc7a55-1608-4e1a-819c-a1ed5d2617bc",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "ea1d38e2-1300-4a4a-8796-0b656cbff5da",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "78d147b0-6e50-40ee-9365-ae07d5ca22d0",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "799cd479-45ec-4b97-9b41-1670bdc35ff2",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "1afc33a2-7610-4943-9292-b98612533598",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "1e49848b-c673-4ccb-a2da-a02c11794719",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "98754ae4-6ea3-4fa5-8944-52741c70b711",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "f20b9244-fbf7-43ca-bcef-c5005b4f3509",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "0cbb3262-a88c-4fae-8251-18d49c99c076",
+            "latches": [
+                "fc33194f-872f-4e43-b603-3693b080a5d6"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "4832b1d2-6d1f-4c02-828d-482745d221aa",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "e6529bde-e79f-4181-883b-3e2bafed102b",
+            "latches": []
+        },
+        {
+            "id": "action",
+            "instance": "a1bc1aa9-c544-47b3-9461-347f88ff4d47",
+            "properties": [
+                [
+                    "name",
+                    "Access to SCADA operator account"
+                ],
+                [
+                    "ttp",
+                    [
+                        [
+                            "tactic",
+                            "TA0110"
+                        ],
+                        [
+                            "technique",
+                            "T0859"
+                        ]
+                    ]
+                ],
+                [
+                    "description",
+                    "Speculation that access was exposed to a valid operator account on the SCADA device."
+                ],
+                [
+                    "confidence",
+                    "speculative"
+                ],
+                [
+                    "execution_start",
+                    null
+                ],
+                [
+                    "execution_end",
+                    null
+                ]
+            ],
+            "anchors": {
+                "0": "1111bad9-7a1c-49f8-a168-cf17c1ef29e3",
+                "30": "403d2498-c56c-4b6c-8452-8272005208dd",
+                "60": "0df1094b-4d34-4aec-b16a-33f0350f10be",
+                "90": "ae443222-6486-4bd7-a3e4-f1a6362d4eb3",
+                "120": "71416cdd-39d0-4a08-bddb-8afba5a8cf5a",
+                "150": "51be1c28-8fe4-48a2-8131-fbdf05cf60b8",
+                "180": "dbb00a00-dcf9-40d6-a568-08b08e37f026",
+                "210": "0f1a71c5-32eb-4d6d-add3-55d01d936379",
+                "240": "55144962-fac2-4239-8c38-819135a91f28",
+                "270": "9eb962d3-90e3-48c2-88f3-9919d15aa0f5",
+                "300": "9ff97818-907e-4613-a777-438beeff4fff",
+                "330": "87c8139d-3def-48d2-81ac-5593e9f6c57b"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "1111bad9-7a1c-49f8-a168-cf17c1ef29e3",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "403d2498-c56c-4b6c-8452-8272005208dd",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "0df1094b-4d34-4aec-b16a-33f0350f10be",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "ae443222-6486-4bd7-a3e4-f1a6362d4eb3",
+            "latches": [
+                "b2786f70-c56f-4424-bf5e-b6cc7b4d1950"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "71416cdd-39d0-4a08-bddb-8afba5a8cf5a",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "51be1c28-8fe4-48a2-8131-fbdf05cf60b8",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "dbb00a00-dcf9-40d6-a568-08b08e37f026",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "0f1a71c5-32eb-4d6d-add3-55d01d936379",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "55144962-fac2-4239-8c38-819135a91f28",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "9eb962d3-90e3-48c2-88f3-9919d15aa0f5",
+            "latches": [
+                "f43ec5ed-cea5-405c-9783-5ba3f776b1a7"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "9ff97818-907e-4613-a777-438beeff4fff",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "87c8139d-3def-48d2-81ac-5593e9f6c57b",
+            "latches": []
+        },
+        {
+            "id": "action",
+            "instance": "0db53fea-54ed-45a0-bcba-0768c3020c26",
+            "properties": [
+                [
+                    "name",
+                    "Use SCADA Graphical User Interface"
+                ],
+                [
+                    "ttp",
+                    [
+                        [
+                            "tactic",
+                            "TA0104"
+                        ],
+                        [
+                            "technique",
+                            "T0823"
+                        ]
+                    ]
+                ],
+                [
+                    "description",
+                    "Attackers gained access to the SCADA web UI over the cellular connection.\n"
+                ],
+                [
+                    "confidence",
+                    "certain"
+                ],
+                [
+                    "execution_start",
+                    null
+                ],
+                [
+                    "execution_end",
+                    null
+                ]
+            ],
+            "anchors": {
+                "0": "e1837796-f736-4157-8688-38ba36d87b39",
+                "30": "35d23c25-ded1-45e7-80cd-0550943f2dbd",
+                "60": "fb58a5e7-9425-4b53-9989-7b36eb834952",
+                "90": "02939da6-1144-40c0-bfa7-e133c419db5d",
+                "120": "76352c75-ac7c-4d93-a5c9-d2483c86fea5",
+                "150": "afa43cd2-5eb9-4cbf-a344-7afd63028e3c",
+                "180": "93f22156-f610-4721-bff3-e12399bedaed",
+                "210": "7216b49b-a01e-4205-a0c8-cfd7cd57935c",
+                "240": "08ee4b04-fb1a-45b0-bc80-375ede24c56f",
+                "270": "e6d4f21b-1986-4f80-bc8d-d55851fda50e",
+                "300": "e2cf06f5-3382-42b3-b650-42e30c817ec8",
+                "330": "bd335219-7ead-4c42-9b5d-444c810aec10"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "e1837796-f736-4157-8688-38ba36d87b39",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "35d23c25-ded1-45e7-80cd-0550943f2dbd",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "fb58a5e7-9425-4b53-9989-7b36eb834952",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "02939da6-1144-40c0-bfa7-e133c419db5d",
+            "latches": [
+                "6af4732c-2e57-4f74-aa99-e59c3b2a7208"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "76352c75-ac7c-4d93-a5c9-d2483c86fea5",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "afa43cd2-5eb9-4cbf-a344-7afd63028e3c",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "93f22156-f610-4721-bff3-e12399bedaed",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "7216b49b-a01e-4205-a0c8-cfd7cd57935c",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "08ee4b04-fb1a-45b0-bc80-375ede24c56f",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "e6d4f21b-1986-4f80-bc8d-d55851fda50e",
+            "latches": [
+                "fefee6fe-02cd-41b4-9923-96c2c27b5457"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "e2cf06f5-3382-42b3-b650-42e30c817ec8",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "bd335219-7ead-4c42-9b5d-444c810aec10",
+            "latches": []
+        },
+        {
+            "id": "action",
+            "instance": "cab2907d-33eb-4067-ae3a-a943f1d90e85",
+            "properties": [
+                [
+                    "name",
+                    "Operate Sluice Gate"
+                ],
+                [
+                    "ttp",
+                    [
+                        [
+                            "tactic",
+                            "TA0105"
+                        ],
+                        [
+                            "technique",
+                            "T0831"
+                        ]
+                    ]
+                ],
+                [
+                    "description",
+                    "The SCADA interface allowed access to the sluice gate controls.\n\nAt the time of the incident, the connection between the SCADA controller and the sluice gate had been taken offline for maintenance. "
+                ],
+                [
+                    "confidence",
+                    "certain"
+                ],
+                [
+                    "execution_start",
+                    null
+                ],
+                [
+                    "execution_end",
+                    null
+                ]
+            ],
+            "anchors": {
+                "0": "a49722d9-e0f5-4794-aa9d-59d54a1614e2",
+                "30": "0846d3c6-4316-43b3-9813-acbf5bfaf298",
+                "60": "73fb1c49-d273-41c2-885d-e39b1be1cba6",
+                "90": "632a78fd-8ded-4fb0-a405-3ad9003b3d69",
+                "120": "9e267c68-dc95-407a-b050-90cb2c9c8e0d",
+                "150": "d008c629-7445-4aef-ba15-b6fd04751918",
+                "180": "2bf6b0ed-f219-4a02-9700-0e25a867377e",
+                "210": "c4df00ac-4dfd-482b-b626-ada5ce2ce3f8",
+                "240": "a7fa7018-4e15-492e-8f7d-b523a097fea3",
+                "270": "75cbbc1d-1828-4fb8-8a04-c640b74818e9",
+                "300": "fa5fade0-a8de-4348-a7af-0d193bccff7e",
+                "330": "79a614ed-ef26-4baf-9a5d-b001c0760ebb"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "a49722d9-e0f5-4794-aa9d-59d54a1614e2",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "0846d3c6-4316-43b3-9813-acbf5bfaf298",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "73fb1c49-d273-41c2-885d-e39b1be1cba6",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "632a78fd-8ded-4fb0-a405-3ad9003b3d69",
+            "latches": [
+                "c8454082-4f69-4c51-b49f-fc28f49c16d1"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "9e267c68-dc95-407a-b050-90cb2c9c8e0d",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "d008c629-7445-4aef-ba15-b6fd04751918",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "2bf6b0ed-f219-4a02-9700-0e25a867377e",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "c4df00ac-4dfd-482b-b626-ada5ce2ce3f8",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "a7fa7018-4e15-492e-8f7d-b523a097fea3",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "75cbbc1d-1828-4fb8-8a04-c640b74818e9",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "fa5fade0-a8de-4348-a7af-0d193bccff7e",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "79a614ed-ef26-4baf-9a5d-b001c0760ebb",
+            "latches": []
+        }
+    ],
+    "layout": {
+        "24207e74-9e7e-4bc8-bee1-6b2216c0ef34": [
+            -310,
+            -510
+        ],
+        "a1bc1aa9-c544-47b3-9461-347f88ff4d47": [
+            -310,
+            -110
+        ],
+        "0db53fea-54ed-45a0-bcba-0768c3020c26": [
+            -310,
+            295
+        ],
+        "cab2907d-33eb-4067-ae3a-a943f1d90e85": [
+            -310,
+            750
+        ]
+    },
+    "camera": {
+        "x": -400,
+        "y": 153,
+        "k": 0.4352752816480622
+    }
+}
