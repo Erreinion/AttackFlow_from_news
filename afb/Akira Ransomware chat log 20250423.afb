@@ -1,0 +1,1230 @@
+{
+    "schema": "attack_flow_v2",
+    "theme": "dark_theme",
+    "objects": [
+        {
+            "id": "flow",
+            "instance": "3c74ea93-424b-49fc-acbb-da5acdb49f03",
+            "properties": [
+                [
+                    "name",
+                    "Akira Ransomware chat log 20250423"
+                ],
+                [
+                    "description",
+                    "An Attack Flow based on information given from Akira ransomware attackers to their victim.\n\nAccess was bought, Kerberos was abused to recover service account passwords, domain admin access was obtained, data was exfiltrated, and ransomware encrypted core virtualised servers."
+                ],
+                [
+                    "author",
+                    [
+                        [
+                            "name",
+                            "Jordan M. Schroeder"
+                        ],
+                        [
+                            "identity_class",
+                            "individual"
+                        ],
+                        [
+                            "contact_information",
+                            "jordan@arxacyber.com"
+                        ]
+                    ]
+                ],
+                [
+                    "scope",
+                    "incident"
+                ],
+                [
+                    "external_references",
+                    [
+                        [
+                            "6040a10a73af2e0780e7a7e5bb35c12f",
+                            [
+                                [
+                                    "source_name",
+                                    "Ransomware.live chat log"
+                                ],
+                                [
+                                    "description",
+                                    null
+                                ],
+                                [
+                                    "url",
+                                    "https://www.ransomware.live/nego/Akira/20250423"
+                                ]
+                            ]
+                        ]
+                    ]
+                ],
+                [
+                    "created",
+                    {
+                        "time": "2026-01-15T19:51:39.850+00:00",
+                        "zone": "Europe/London"
+                    }
+                ]
+            ],
+            "objects": [
+                "247f0763-e8b7-4329-ae6e-04106a086f0c",
+                "a54058bf-69bc-4bce-807a-f433ba3e151a",
+                "e74ef13b-b740-4cba-b0be-c2c91e22aa30",
+                "8e4ce1a7-c050-49cd-8368-58b98f548013",
+                "c679fc3c-9d91-4ce8-b9d6-7eaada71cc2f",
+                "faabc392-debf-4b19-902b-df89eab0d576",
+                "e5f980c6-9834-4772-8e05-b387b44bf592",
+                "04f8305d-b35f-476b-bb16-9da3e7f86f0b",
+                "330ff2ff-b1be-41a3-9011-2a72b35caee4",
+                "dc772157-cd72-4c95-9afa-c139ad240a87",
+                "c1b7eeb1-219a-49da-9fb7-070becceda57",
+                "108e026c-19e8-44a9-be34-af0a58ca7d76",
+                "abe6dd14-cf31-4517-bd87-66c6d1f2c259",
+                "5ab39e99-ce5b-4d70-912a-20970a0f9812",
+                "9eb8600d-b4f8-4d52-9c06-504717edff5e",
+                "3bc1de88-71a5-4206-8e68-5dcd680f6b83"
+            ]
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "247f0763-e8b7-4329-ae6e-04106a086f0c",
+            "source": "9709a0a0-d50a-4d5d-83b6-558b7121fd49",
+            "target": "5158ebdd-4700-4846-bb93-8d9ec367b243",
+            "handles": [
+                "357d1cc4-d89a-4f38-8add-f04ee0e51e30"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "9709a0a0-d50a-4d5d-83b6-558b7121fd49"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "5158ebdd-4700-4846-bb93-8d9ec367b243"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "357d1cc4-d89a-4f38-8add-f04ee0e51e30"
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "a54058bf-69bc-4bce-807a-f433ba3e151a",
+            "source": "b369989b-7360-44c6-955b-4d005b2852bf",
+            "target": "58c8eedd-0b2e-40ec-bb93-4baf52134292",
+            "handles": [
+                "dd66d8a2-560b-4e3f-8b6e-a0b6fb93845c"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "b369989b-7360-44c6-955b-4d005b2852bf"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "58c8eedd-0b2e-40ec-bb93-4baf52134292"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "dd66d8a2-560b-4e3f-8b6e-a0b6fb93845c"
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "e74ef13b-b740-4cba-b0be-c2c91e22aa30",
+            "source": "7268dbbd-ded5-4e66-9c27-ad47dddf89d1",
+            "target": "21ccc330-14d0-4610-9d7a-90288091ad75",
+            "handles": [
+                "4748b90e-6bea-4dd6-bf9e-4c1cf8c551c6"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "7268dbbd-ded5-4e66-9c27-ad47dddf89d1"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "21ccc330-14d0-4610-9d7a-90288091ad75"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "4748b90e-6bea-4dd6-bf9e-4c1cf8c551c6"
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "8e4ce1a7-c050-49cd-8368-58b98f548013",
+            "source": "54370a83-25b1-4258-ae8a-482afe666eab",
+            "target": "a1741a53-b3ea-4714-8184-bc5383284b1d",
+            "handles": [
+                "ca84b7be-229f-49f6-8196-e58dff602af9"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "54370a83-25b1-4258-ae8a-482afe666eab"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "a1741a53-b3ea-4714-8184-bc5383284b1d"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "ca84b7be-229f-49f6-8196-e58dff602af9"
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "c679fc3c-9d91-4ce8-b9d6-7eaada71cc2f",
+            "source": "072ff11b-f40e-40d2-a3f6-6f069c4d6890",
+            "target": "ec6f82c7-526f-4ba3-a46e-a2fa06321f40",
+            "handles": [
+                "17ff40fe-81a9-47a8-8149-bae785925600"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "072ff11b-f40e-40d2-a3f6-6f069c4d6890"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "ec6f82c7-526f-4ba3-a46e-a2fa06321f40"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "17ff40fe-81a9-47a8-8149-bae785925600"
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "faabc392-debf-4b19-902b-df89eab0d576",
+            "source": "2e68b06a-8cdc-4469-bb51-ad1df92dd6e6",
+            "target": "a3bd9354-2481-40ee-8be5-551bab0b209c",
+            "handles": [
+                "4bad0985-dee1-4f99-b258-1d27ce8487d4"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "2e68b06a-8cdc-4469-bb51-ad1df92dd6e6"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "a3bd9354-2481-40ee-8be5-551bab0b209c"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "4bad0985-dee1-4f99-b258-1d27ce8487d4"
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "e5f980c6-9834-4772-8e05-b387b44bf592",
+            "source": "f1c2e77a-0f73-453c-8694-bba663acb41b",
+            "target": "afb00888-b15b-484b-a4c1-862a69c6989c",
+            "handles": [
+                "d1340653-234b-4970-a7f4-2ece4edfa53a"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "f1c2e77a-0f73-453c-8694-bba663acb41b"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "afb00888-b15b-484b-a4c1-862a69c6989c"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "d1340653-234b-4970-a7f4-2ece4edfa53a"
+        },
+        {
+            "id": "dynamic_line",
+            "instance": "04f8305d-b35f-476b-bb16-9da3e7f86f0b",
+            "source": "8e6472bf-1c0a-4790-9ef4-b2b9fd0d1202",
+            "target": "51fce13c-3aa2-4a78-a850-9811a14024ca",
+            "handles": [
+                "b4f9ed3b-0ef4-49eb-ae44-2a6db7d4b4f1"
+            ]
+        },
+        {
+            "id": "generic_latch",
+            "instance": "8e6472bf-1c0a-4790-9ef4-b2b9fd0d1202"
+        },
+        {
+            "id": "generic_latch",
+            "instance": "51fce13c-3aa2-4a78-a850-9811a14024ca"
+        },
+        {
+            "id": "generic_handle",
+            "instance": "b4f9ed3b-0ef4-49eb-ae44-2a6db7d4b4f1"
+        },
+        {
+            "id": "action",
+            "instance": "330ff2ff-b1be-41a3-9011-2a72b35caee4",
+            "properties": [
+                [
+                    "name",
+                    "Initial Access from purchased credentials"
+                ],
+                [
+                    "ttp",
+                    [
+                        [
+                            "tactic",
+                            null
+                        ],
+                        [
+                            "technique",
+                            "T1078"
+                        ]
+                    ]
+                ],
+                [
+                    "description",
+                    "Access to the environment was obtained via credentials purchased on a criminal marketplace."
+                ],
+                [
+                    "confidence",
+                    null
+                ],
+                [
+                    "execution_start",
+                    null
+                ],
+                [
+                    "execution_end",
+                    null
+                ]
+            ],
+            "anchors": {
+                "0": "69e1589d-d64d-4e7b-9b52-793b3a450bb0",
+                "30": "8c912f66-cd5a-4aa9-86be-288f19ec332e",
+                "60": "f200c4bc-aae4-4e88-96d8-8ecf76673f54",
+                "90": "eedbe5db-2a10-4741-8ac0-b7ab7f7a3623",
+                "120": "4dee7d7f-0c48-4cd9-8c95-5d5a7cc2373b",
+                "150": "edbe920a-465a-4fb1-a3a5-e306502d191d",
+                "180": "7c803c71-411e-4d9d-a0da-fc4a8b2ab074",
+                "210": "e8bafd32-54ce-498f-84f8-412662f944bf",
+                "240": "60d6bf6b-9de9-40bf-9f8e-b429c157ba79",
+                "270": "9b9d177d-41b4-4f4e-a5ff-a9bf4d276542",
+                "300": "b1fc5218-eeae-4ee4-a187-28201b75bc35",
+                "330": "de5fbee7-3e17-4a8c-9542-3d03304fabe4"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "69e1589d-d64d-4e7b-9b52-793b3a450bb0",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "8c912f66-cd5a-4aa9-86be-288f19ec332e",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "f200c4bc-aae4-4e88-96d8-8ecf76673f54",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "eedbe5db-2a10-4741-8ac0-b7ab7f7a3623",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "4dee7d7f-0c48-4cd9-8c95-5d5a7cc2373b",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "edbe920a-465a-4fb1-a3a5-e306502d191d",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "7c803c71-411e-4d9d-a0da-fc4a8b2ab074",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "e8bafd32-54ce-498f-84f8-412662f944bf",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "60d6bf6b-9de9-40bf-9f8e-b429c157ba79",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "9b9d177d-41b4-4f4e-a5ff-a9bf4d276542",
+            "latches": [
+                "9709a0a0-d50a-4d5d-83b6-558b7121fd49"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "b1fc5218-eeae-4ee4-a187-28201b75bc35",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "de5fbee7-3e17-4a8c-9542-3d03304fabe4",
+            "latches": []
+        },
+        {
+            "id": "action",
+            "instance": "dc772157-cd72-4c95-9afa-c139ad240a87",
+            "properties": [
+                [
+                    "name",
+                    "Kerberoasting"
+                ],
+                [
+                    "ttp",
+                    [
+                        [
+                            "tactic",
+                            "TA0006"
+                        ],
+                        [
+                            "technique",
+                            "T1558.003"
+                        ]
+                    ]
+                ],
+                [
+                    "description",
+                    "Service accounts were requested via Kerberos ticket-granting service. Encrypted service ticket hashes were extracted for offline cracking.\n"
+                ],
+                [
+                    "confidence",
+                    null
+                ],
+                [
+                    "execution_start",
+                    null
+                ],
+                [
+                    "execution_end",
+                    null
+                ]
+            ],
+            "anchors": {
+                "0": "a3f8f8f5-cc12-4dad-bc80-4c74722bbd22",
+                "30": "5648fc1a-fc68-4f44-9887-e335af78069b",
+                "60": "02d506c3-2390-4247-a3ba-5df7cc4cf6f2",
+                "90": "f25ec0e0-f14f-431e-bc5a-79a47c49621e",
+                "120": "792c8dd5-b857-41e6-bbe1-3ec2c500bd4c",
+                "150": "479db0f1-f289-491a-b053-7de7faf1e6d3",
+                "180": "e34e215c-5fe3-4c00-83e8-543c47eaa95e",
+                "210": "17458aff-875b-4b5c-860c-fda57f943248",
+                "240": "180b60ae-94d3-43c5-9afc-061d628a5b89",
+                "270": "48bc05f8-4d06-42e2-8a99-8d9349175a54",
+                "300": "9f8e465f-351e-473b-8edc-d10fdaf114d5",
+                "330": "349c2567-0587-4b48-9764-cf9a46a6948c"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "a3f8f8f5-cc12-4dad-bc80-4c74722bbd22",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "5648fc1a-fc68-4f44-9887-e335af78069b",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "02d506c3-2390-4247-a3ba-5df7cc4cf6f2",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "f25ec0e0-f14f-431e-bc5a-79a47c49621e",
+            "latches": [
+                "5158ebdd-4700-4846-bb93-8d9ec367b243"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "792c8dd5-b857-41e6-bbe1-3ec2c500bd4c",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "479db0f1-f289-491a-b053-7de7faf1e6d3",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "e34e215c-5fe3-4c00-83e8-543c47eaa95e",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "17458aff-875b-4b5c-860c-fda57f943248",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "180b60ae-94d3-43c5-9afc-061d628a5b89",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "48bc05f8-4d06-42e2-8a99-8d9349175a54",
+            "latches": [
+                "b369989b-7360-44c6-955b-4d005b2852bf"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "9f8e465f-351e-473b-8edc-d10fdaf114d5",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "349c2567-0587-4b48-9764-cf9a46a6948c",
+            "latches": []
+        },
+        {
+            "id": "action",
+            "instance": "c1b7eeb1-219a-49da-9fb7-070becceda57",
+            "properties": [
+                [
+                    "name",
+                    "Password Cracking"
+                ],
+                [
+                    "ttp",
+                    [
+                        [
+                            "tactic",
+                            "TA0006"
+                        ],
+                        [
+                            "technique",
+                            "T1110.002"
+                        ]
+                    ]
+                ],
+                [
+                    "description",
+                    "Kerberos service ticket hashes were cracked offline to recover plaintext passwords."
+                ],
+                [
+                    "confidence",
+                    null
+                ],
+                [
+                    "execution_start",
+                    null
+                ],
+                [
+                    "execution_end",
+                    null
+                ]
+            ],
+            "anchors": {
+                "0": "43df9600-4292-4c59-8635-d140eff68307",
+                "30": "072c1cc0-8544-4780-82f5-12644da8f4a5",
+                "60": "0371406c-e041-4e52-b049-5a9d0b08349d",
+                "90": "352bfa7a-4c18-44df-b5ef-375cff80a5e2",
+                "120": "3cd762b2-dda1-4841-9e9d-2c04f98bb65e",
+                "150": "2e1a3967-396d-4e37-ac15-adf8dae32864",
+                "180": "8ec67a5c-3973-4789-9b18-044d8f037d09",
+                "210": "1308c637-26be-41cb-a7a3-cdd7647e6c26",
+                "240": "e269cec5-3ee8-4c94-84dc-202b409f607d",
+                "270": "6d0f0ed0-0299-4fcf-8bde-eecab7340453",
+                "300": "f63cfba4-5526-4611-969c-4d45275e5e8d",
+                "330": "5f7b2f34-9511-4be1-9a4b-d9e6769604c5"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "43df9600-4292-4c59-8635-d140eff68307",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "072c1cc0-8544-4780-82f5-12644da8f4a5",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "0371406c-e041-4e52-b049-5a9d0b08349d",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "352bfa7a-4c18-44df-b5ef-375cff80a5e2",
+            "latches": [
+                "58c8eedd-0b2e-40ec-bb93-4baf52134292"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "3cd762b2-dda1-4841-9e9d-2c04f98bb65e",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "2e1a3967-396d-4e37-ac15-adf8dae32864",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "8ec67a5c-3973-4789-9b18-044d8f037d09",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "1308c637-26be-41cb-a7a3-cdd7647e6c26",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "e269cec5-3ee8-4c94-84dc-202b409f607d",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "6d0f0ed0-0299-4fcf-8bde-eecab7340453",
+            "latches": [
+                "7268dbbd-ded5-4e66-9c27-ad47dddf89d1"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "f63cfba4-5526-4611-969c-4d45275e5e8d",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "5f7b2f34-9511-4be1-9a4b-d9e6769604c5",
+            "latches": []
+        },
+        {
+            "id": "action",
+            "instance": "108e026c-19e8-44a9-be34-af0a58ca7d76",
+            "properties": [
+                [
+                    "name",
+                    "Domain Accounts"
+                ],
+                [
+                    "ttp",
+                    [
+                        [
+                            "tactic",
+                            "TA0004"
+                        ],
+                        [
+                            "technique",
+                            "T1078.002"
+                        ]
+                    ]
+                ],
+                [
+                    "description",
+                    "Recovered credentials included a domain admin, granting full control of Active Directory."
+                ],
+                [
+                    "confidence",
+                    null
+                ],
+                [
+                    "execution_start",
+                    null
+                ],
+                [
+                    "execution_end",
+                    null
+                ]
+            ],
+            "anchors": {
+                "0": "e444d069-9c22-43ff-a474-86e4dc721991",
+                "30": "f0b389f3-1333-4e1c-996e-354292e9b8b3",
+                "60": "22566313-6736-4297-91a2-3c09a35cb7ad",
+                "90": "81942833-e04d-48a2-8243-22b7774ec0ce",
+                "120": "b68403fd-ad5e-4b47-b96c-f4014cd31e5d",
+                "150": "3eda318c-ff36-43a7-8de5-4707b0a8f13b",
+                "180": "9106b308-4d9d-4329-91b4-16d6244ebb9b",
+                "210": "d85294ff-993d-4613-86e2-ec0d651d97bb",
+                "240": "e914f04d-97e2-4948-9f2b-415cdfa29a98",
+                "270": "4ecf3421-0667-4596-bf2a-e6d44d43ebc0",
+                "300": "b15c2cce-6802-426a-bdc6-e4b602bff9d3",
+                "330": "a77e906e-dba8-414c-8786-013800d4775a"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "e444d069-9c22-43ff-a474-86e4dc721991",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "f0b389f3-1333-4e1c-996e-354292e9b8b3",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "22566313-6736-4297-91a2-3c09a35cb7ad",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "81942833-e04d-48a2-8243-22b7774ec0ce",
+            "latches": [
+                "21ccc330-14d0-4610-9d7a-90288091ad75"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "b68403fd-ad5e-4b47-b96c-f4014cd31e5d",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "3eda318c-ff36-43a7-8de5-4707b0a8f13b",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "9106b308-4d9d-4329-91b4-16d6244ebb9b",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "d85294ff-993d-4613-86e2-ec0d651d97bb",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "e914f04d-97e2-4948-9f2b-415cdfa29a98",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "4ecf3421-0667-4596-bf2a-e6d44d43ebc0",
+            "latches": [
+                "54370a83-25b1-4258-ae8a-482afe666eab"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "b15c2cce-6802-426a-bdc6-e4b602bff9d3",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "a77e906e-dba8-414c-8786-013800d4775a",
+            "latches": []
+        },
+        {
+            "id": "action",
+            "instance": "abe6dd14-cf31-4517-bd87-66c6d1f2c259",
+            "properties": [
+                [
+                    "name",
+                    "Admin access to VM hypervisor"
+                ],
+                [
+                    "ttp",
+                    [
+                        [
+                            "tactic",
+                            "TA0008"
+                        ],
+                        [
+                            "technique",
+                            null
+                        ]
+                    ]
+                ],
+                [
+                    "description",
+                    null
+                ],
+                [
+                    "confidence",
+                    null
+                ],
+                [
+                    "execution_start",
+                    null
+                ],
+                [
+                    "execution_end",
+                    null
+                ]
+            ],
+            "anchors": {
+                "0": "f9c433b4-2f4c-4fa7-9b86-5245e0c82426",
+                "30": "6b26aeed-c1d7-4bc8-a667-147884e481ff",
+                "60": "37a0aa36-d03a-4ae7-896d-af9e5c358a22",
+                "90": "a2ef30d5-c45d-4e4c-b911-5f34c79e9768",
+                "120": "0b2adec5-79f0-4994-8ea5-e63827f4cc47",
+                "150": "d5e4884a-6a21-4b87-949e-a4b1377ac5d5",
+                "180": "2461a122-9cf0-4aaa-84c6-581e87b41ac3",
+                "210": "c85c79da-b2a9-414c-b2cb-9d12538c2cdd",
+                "240": "497269bd-eb3e-4d82-80e1-71e7b550ed70",
+                "270": "2d73e041-3420-4fa5-9e8e-1092c6a28f64",
+                "300": "284cf1ce-410e-4a8c-879b-3158e35b07ba",
+                "330": "55ec5491-1158-41ae-b220-3222d977bf13"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "f9c433b4-2f4c-4fa7-9b86-5245e0c82426",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "6b26aeed-c1d7-4bc8-a667-147884e481ff",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "37a0aa36-d03a-4ae7-896d-af9e5c358a22",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "a2ef30d5-c45d-4e4c-b911-5f34c79e9768",
+            "latches": [
+                "a1741a53-b3ea-4714-8184-bc5383284b1d"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "0b2adec5-79f0-4994-8ea5-e63827f4cc47",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "d5e4884a-6a21-4b87-949e-a4b1377ac5d5",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "2461a122-9cf0-4aaa-84c6-581e87b41ac3",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "c85c79da-b2a9-414c-b2cb-9d12538c2cdd",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "497269bd-eb3e-4d82-80e1-71e7b550ed70",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "2d73e041-3420-4fa5-9e8e-1092c6a28f64",
+            "latches": [
+                "2e68b06a-8cdc-4469-bb51-ad1df92dd6e6"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "284cf1ce-410e-4a8c-879b-3158e35b07ba",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "55ec5491-1158-41ae-b220-3222d977bf13",
+            "latches": []
+        },
+        {
+            "id": "action",
+            "instance": "5ab39e99-ce5b-4d70-912a-20970a0f9812",
+            "properties": [
+                [
+                    "name",
+                    "Data from Information Repositories"
+                ],
+                [
+                    "ttp",
+                    [
+                        [
+                            "tactic",
+                            "TA0009"
+                        ],
+                        [
+                            "technique",
+                            "T1213"
+                        ]
+                    ]
+                ],
+                [
+                    "description",
+                    null
+                ],
+                [
+                    "confidence",
+                    null
+                ],
+                [
+                    "execution_start",
+                    null
+                ],
+                [
+                    "execution_end",
+                    null
+                ]
+            ],
+            "anchors": {
+                "0": "1c9be4d6-28d5-4e28-bcd8-39a8561d0b02",
+                "30": "6690a434-6caa-4a99-b456-7c29851bf75d",
+                "60": "1dcddd57-a02c-4a6b-87b3-804d200fc2bc",
+                "90": "e016cb7a-a86b-47db-b5c5-41bf99003b86",
+                "120": "87107399-c49b-4b3e-a233-5ec10c99826f",
+                "150": "d9ac6501-14d0-4a49-b0db-b756dc2b1eaf",
+                "180": "6cdfa339-f379-4709-8d61-be259cd85fe3",
+                "210": "f5c70f16-347d-4735-9742-fbd2cb9868e6",
+                "240": "924368bd-0bdf-4dd8-b0e2-4108f3171b82",
+                "270": "9871e1f1-4f6b-43d6-b301-7277a1f8ae51",
+                "300": "c219439f-e33a-4c9a-8aeb-881a7de071f7",
+                "330": "ec1dd25f-e218-4009-9623-a956d11f489f"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "1c9be4d6-28d5-4e28-bcd8-39a8561d0b02",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "6690a434-6caa-4a99-b456-7c29851bf75d",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "1dcddd57-a02c-4a6b-87b3-804d200fc2bc",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "e016cb7a-a86b-47db-b5c5-41bf99003b86",
+            "latches": [
+                "a3bd9354-2481-40ee-8be5-551bab0b209c"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "87107399-c49b-4b3e-a233-5ec10c99826f",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "d9ac6501-14d0-4a49-b0db-b756dc2b1eaf",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "6cdfa339-f379-4709-8d61-be259cd85fe3",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "f5c70f16-347d-4735-9742-fbd2cb9868e6",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "924368bd-0bdf-4dd8-b0e2-4108f3171b82",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "9871e1f1-4f6b-43d6-b301-7277a1f8ae51",
+            "latches": [
+                "f1c2e77a-0f73-453c-8694-bba663acb41b"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "c219439f-e33a-4c9a-8aeb-881a7de071f7",
+            "latches": [
+                "072ff11b-f40e-40d2-a3f6-6f069c4d6890",
+                "ec6f82c7-526f-4ba3-a46e-a2fa06321f40"
+            ]
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "ec1dd25f-e218-4009-9623-a956d11f489f",
+            "latches": []
+        },
+        {
+            "id": "action",
+            "instance": "9eb8600d-b4f8-4d52-9c06-504717edff5e",
+            "properties": [
+                [
+                    "name",
+                    "Exfiltration Over Web Service"
+                ],
+                [
+                    "ttp",
+                    [
+                        [
+                            "tactic",
+                            "TA0010"
+                        ],
+                        [
+                            "technique",
+                            "T1567"
+                        ]
+                    ]
+                ],
+                [
+                    "description",
+                    "Company data exfiltrated to attacker servers"
+                ],
+                [
+                    "confidence",
+                    null
+                ],
+                [
+                    "execution_start",
+                    null
+                ],
+                [
+                    "execution_end",
+                    null
+                ]
+            ],
+            "anchors": {
+                "0": "fd42637e-781f-4e3e-a202-6e1b672ad205",
+                "30": "03e96bc2-5210-47b7-ae27-f5938225038d",
+                "60": "1ab1dcb8-9fd4-41ba-87b8-f50e6959f5e2",
+                "90": "257eae1c-a182-4853-84dc-c4ca4a40c0bc",
+                "120": "bd58f5c5-6e9e-4116-a5e1-ad2ce35c0d53",
+                "150": "cb76c66e-0ca0-40cc-b04a-2398d2ac2880",
+                "180": "ba68d583-1724-4758-b89d-248818a95a21",
+                "210": "214260d8-3090-4d5c-88de-81bdbcfab3d8",
+                "240": "9727ffa9-8e85-4b9a-a149-3c4729467171",
+                "270": "e33bce1e-84ad-4bc8-8e74-fd4e1742099c",
+                "300": "c646ba9c-70ea-42d5-84e1-514756be84f2",
+                "330": "f25cfd4b-e56e-4cfc-8dfb-3aaffd2cdb5d"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "fd42637e-781f-4e3e-a202-6e1b672ad205",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "03e96bc2-5210-47b7-ae27-f5938225038d",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "1ab1dcb8-9fd4-41ba-87b8-f50e6959f5e2",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "257eae1c-a182-4853-84dc-c4ca4a40c0bc",
+            "latches": [
+                "afb00888-b15b-484b-a4c1-862a69c6989c"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "bd58f5c5-6e9e-4116-a5e1-ad2ce35c0d53",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "cb76c66e-0ca0-40cc-b04a-2398d2ac2880",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "ba68d583-1724-4758-b89d-248818a95a21",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "214260d8-3090-4d5c-88de-81bdbcfab3d8",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "9727ffa9-8e85-4b9a-a149-3c4729467171",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "e33bce1e-84ad-4bc8-8e74-fd4e1742099c",
+            "latches": [
+                "8e6472bf-1c0a-4790-9ef4-b2b9fd0d1202"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "c646ba9c-70ea-42d5-84e1-514756be84f2",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "f25cfd4b-e56e-4cfc-8dfb-3aaffd2cdb5d",
+            "latches": []
+        },
+        {
+            "id": "action",
+            "instance": "3bc1de88-71a5-4206-8e68-5dcd680f6b83",
+            "properties": [
+                [
+                    "name",
+                    "VMs and Data Encrypted for Impact"
+                ],
+                [
+                    "ttp",
+                    [
+                        [
+                            "tactic",
+                            "TA0040"
+                        ],
+                        [
+                            "technique",
+                            "T1486"
+                        ]
+                    ]
+                ],
+                [
+                    "description",
+                    null
+                ],
+                [
+                    "confidence",
+                    null
+                ],
+                [
+                    "execution_start",
+                    null
+                ],
+                [
+                    "execution_end",
+                    null
+                ]
+            ],
+            "anchors": {
+                "0": "a8df0844-d67c-4e2e-9e1a-92ceeece91e9",
+                "30": "06dccac2-046d-4835-b98f-0965fda9b11c",
+                "60": "57651115-9675-4ab5-90de-d10c9ab04c8e",
+                "90": "f1f935f2-64a3-4141-becc-617cb5d0f966",
+                "120": "0d95a784-c217-47ad-8129-ffeaa5379dab",
+                "150": "0ef2e21d-1d0b-4fa5-9922-03a4bdaf270e",
+                "180": "9b4f9ac5-4e65-49c5-8715-fc9c7c320f4a",
+                "210": "abde4e14-b76e-4eff-9d00-8c7074d96c48",
+                "240": "d847267f-4f78-4c9c-a06d-cbc09998d049",
+                "270": "a4a78977-91ca-43bd-9fbd-6736fbeaeaff",
+                "300": "a51df912-fdc5-4850-a095-a2bc74e2cd13",
+                "330": "671362f3-f289-456f-a5ce-a531bc0c17cf"
+            }
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "a8df0844-d67c-4e2e-9e1a-92ceeece91e9",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "06dccac2-046d-4835-b98f-0965fda9b11c",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "57651115-9675-4ab5-90de-d10c9ab04c8e",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "f1f935f2-64a3-4141-becc-617cb5d0f966",
+            "latches": [
+                "51fce13c-3aa2-4a78-a850-9811a14024ca"
+            ]
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "0d95a784-c217-47ad-8129-ffeaa5379dab",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "0ef2e21d-1d0b-4fa5-9922-03a4bdaf270e",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "9b4f9ac5-4e65-49c5-8715-fc9c7c320f4a",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "abde4e14-b76e-4eff-9d00-8c7074d96c48",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "d847267f-4f78-4c9c-a06d-cbc09998d049",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "a4a78977-91ca-43bd-9fbd-6736fbeaeaff",
+            "latches": []
+        },
+        {
+            "id": "vertical_anchor",
+            "instance": "a51df912-fdc5-4850-a095-a2bc74e2cd13",
+            "latches": []
+        },
+        {
+            "id": "horizontal_anchor",
+            "instance": "671362f3-f289-456f-a5ce-a531bc0c17cf",
+            "latches": []
+        }
+    ],
+    "layout": {
+        "330ff2ff-b1be-41a3-9011-2a72b35caee4": [
+            -95,
+            -245
+        ],
+        "dc772157-cd72-4c95-9afa-c139ad240a87": [
+            -95,
+            95
+        ],
+        "c1b7eeb1-219a-49da-9fb7-070becceda57": [
+            -95,
+            430
+        ],
+        "108e026c-19e8-44a9-be34-af0a58ca7d76": [
+            -95,
+            755
+        ],
+        "abe6dd14-cf31-4517-bd87-66c6d1f2c259": [
+            -95,
+            1025
+        ],
+        "5ab39e99-ce5b-4d70-912a-20970a0f9812": [
+            -95,
+            1265
+        ],
+        "9eb8600d-b4f8-4d52-9c06-504717edff5e": [
+            -95,
+            1565
+        ],
+        "3bc1de88-71a5-4206-8e68-5dcd680f6b83": [
+            -95,
+            1860
+        ]
+    },
+    "camera": {
+        "x": -267,
+        "y": 1264,
+        "k": 0.5358867312681517
+    }
+}
