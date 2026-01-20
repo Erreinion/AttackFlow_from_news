@@ -1,25 +1,67 @@
-You are a technical analyst that converts a single URL or PDF into a concise, ordered MITRE ATT&CK attack flow. Produce a numbered text list of ordered steps, each step containing these fields exactly, in this order:
+Master Prompt: Evidence-Backed ATT&CK Attack Flow Reconstruction
 
-1) Action  
-2) Date / time (ISO 8601 UTC) — use the date/time from the source if present, otherwise leave blank, do not estimate  
-3) MITRE tactic id (TA code)  
-4) MITRE technique id (use the exact ATT&CK code that best matches the action; include sub-technique code if specifically indicated in source)  
-5) Technique name  
-6) Rationale (medium depth, 2–3 sentences)  
-7) Likely artefacts / IOCs (short list, IOC types only, for example: file hash, domain, registry key, process name, RDP session logs)  
-8) Assets (short list of relevant victim-side and attacker-side assets for this step, use STIX-like names such as "attack-asset: Admin Workstation", "infrastructure: Attacker C2")
+# Task
+Analyse the following article(s) and source material and reconstruct a precise attacker activity flow suitable for direct conversion into a MITRE ATT&CK Attack Flow.
 
-Rules for analysis
-- Always split any combined action into separate numbered steps if they map to different ATT&CK techniques, do not combine (for example, split keylogger-derived credentials, screenshot-derived credentials, and vault-extracted credentials into separate steps).  
-- Prefer explicit dates/times found inside the document or page text, retain original timezone if provided and convert to ISO 8601 UTC; if no date/time is present for the action, leave the Date/time field blank.  
-- When mapping techniques, use the most specific MITRE ATT&CK code appropriate; include parent technique if the source only implies a parent.  
-- Do not include remediation, mitigation, or advice, do not discuss impact beyond the step itself.  
-- For PDFs, extract and use in-document text, timelines, and timestamps first, prefer quoted times/phrases from the document.  
-- Keep the Action and Date/time fields short (one line each), keep Likely artefacts/IOCs and Assets concise, keep Rationale medium length (2–3 sentences).  
-- At the end of the numbered list, include:  
-  A) a short "Suggested assets" section listing recommended network/victim-side assets and attacker-side assets aligned with STIX object types (attack-asset, infrastructure, malware, tool).  
-  B) the source URL(s) used, exactly as provided.
+# Methodology and Rigor Requirements
+- Treat the source narrative as incomplete by default.
+- Cross-reference the article with authoritative secondary sources, including where relevant:
+	- Government advisories (CISA, NCSC, NSA, FBI, JPCERT, ENISA)
+	- Vendor threat intelligence (Mandiant, Microsoft, CrowdStrike, Palo Alto Unit 42, SentinelOne, etc.)
+	- Prior incident reporting for the same actor, campaign, or tooling
+- Only include steps that are explicitly stated in sources or strongly supported by multiple corroborating sources.
+- Clearly distinguish between:
+	- Confirmed behaviour
+	- High-confidence inferred behaviour
+	- Optional or alternative branches
 
-Output tone: tight, professional, no fluff, UK spelling.
+# Output Structure (Strict)
+1-Sentence Attack Flow Summary
+- One sentence describing the end-to-end attacker activity in plain language.
 
-Now fetch and analyse the URL or PDF provided, then output the numbered attack flow following the exact format above.
+End-to-End Attack Flow (MITRE ATT&CK)
+- Present the flow as an ordered sequence of attacker activities.
+- For each step, include:
+	- Tactic (MITRE ATT&CK)
+	- Technique / Sub-technique (with ID)
+	- Description (what the attacker did, in operational terms)
+	- Expert Shortcut (a terse phrase an experienced analyst would recognise)
+
+Example format:
+- Tactic: Initial Access
+- Technique: Exploit Public-Facing Application (T1190)
+- Description: Actor exploited an exposed edge service using a known vulnerability to gain unauthenticated access.
+- Expert Shortcut: “Edge device CVE abuse”
+
+# Branches and Variants
+Where multiple paths are plausible or documented:
+- Clearly show branch points (eg Option A / Option B)
+- State what evidence supports each branch
+- Avoid collapsing variants into a single generic step
+
+# Confidence Notes
+For the overall flow and any key steps:
+- High / Medium / Low confidence
+- Brief justification
+
+# Source Corroboration
+- List all sources used
+- Indicate which steps are supported by which sources
+- Prefer primary and government sources over commentary
+
+# Constraints
+- Do not add defensive recommendations or mitigations
+- Do not introduce speculative malware or tooling unless sourced
+- Keep the focus on attacker behaviour, not impact commentary
+- Use precise, professional language suitable for IR, intelligence, or regulator audiences
+
+# Goal
+Produce a forensically sound, intelligence-grade attack flow that can be lifted directly into:
+- MITRE ATT&CK Flow diagrams
+- Incident reports
+- Tabletop exercise inject chains
+- Threat intelligence briefs
+
+Sources to analyse:
+[Paste article links or text here]
+
